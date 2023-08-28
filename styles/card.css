@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    width: 80%;
+    border: 0px solid gray;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: 13px 7px 8px 3px rgba(0,0,0,0.36);
+    -moz-box-shadow: 13px 7px 8px 3px rgba(0,0,0,0.36);
+    box-shadow: 13px 7px 8px 3px rgba(0,0,0,0.36);
+    justify-content: space-between;
+}
+
+
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.card-left > span {
+    font-weight: 400;
+}
+.card-left > h1 {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.card-left > p {
+    color: rgb(70, 70, 70);
+
+}
+
+img {
+    width: 400px;
+    height: 200px;
+}

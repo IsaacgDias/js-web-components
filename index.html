@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticías Galactica</title>
+    <link rel="stylesheet" href="./styles/card.css">
+    <script src="./src/Compontes/CardNews.js" defer></script>
+    <script src="./src/Compontes/TituloDinamico.js" defer></script>
+</head>
+<body>
+    <!-- Normal (Dom) -->
+    <div class="container">
+        <div class="card">
+           <div class="card-left">
+                <span>Isaac Dias</span>
+                <h1>Darth Vader Contrata Devs</h1>
+                <p>Darth Vader procura desenvolvedores que trabalhar com componentes.</p>
+           </div>
+           <div class="card-right">
+                <img src="./assets/intro-1566581388.jpg" alt="Darth Vader">
+           </div>
+        </div>
+    </div>
+   
+    <!-- Utilizando componentes (shadow-dom)-->
+    <card-news 
+        autor="Isaac"
+        title="Darth Vader Contrata Devs"
+        photo="./assets/intro-1566581388.jpg"
+        link-url="#"
+        content="Darth Vader procura desenvolvedores que trabalhar com componentes."  
+    >
+    </card-news>
+    <card-news 
+        title="Yoda convence replubica a utilizar components"
+        link-url="#"
+        content="Yoda choca a replubica."  
+    >
+    </card-news>
+    <card-news 
+    title="Yoda convence replubica a utilizar components"
+    link-url="#"
+    content="Yoda choca a replubica."  
+>
+</card-news>
+</body>
+</html>
